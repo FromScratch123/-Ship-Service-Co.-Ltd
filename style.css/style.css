@@ -1,0 +1,809 @@
+@charset "UTF-8";
+
+
+
+/* =========== base ===========*/
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", "遊ゴシック", YuGothic, "遊ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2.0;
+
+}
+
+h2,h3,h4,h5,{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  opacity: .9;
+  border-radius: 5px;
+}
+
+ul,li,dl,dt,dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  transition: 1s;
+  opacity: 0.6;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===================
+   ホームページ
+=================== */
+
+/* =========== header ===========*/
+
+.header{
+  width: 100%;
+}
+
+.header-nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-wrapper.header-nav h1 {
+  min-width: 380px;
+}
+.content-wrapper.header-nav a {
+  color: #333;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 600px;
+}
+
+.header nav ul li {
+  margin-right: 30px;
+}
+
+/* =========== main ===========*/
+
+.mainvisual {
+  position: relative;
+  height: 600px;
+}
+
+.mainvisual img {
+  width: 70%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 30%;
+}
+
+.mainvisual h2 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background: rgba(255, 255, 255, .6);
+  font-style: 3rem;
+  padding: 1rem;
+}
+
+.mainvisual h2 span {
+  font-size: 1.5em;
+  color: crimson;
+}
+
+.bg1 {
+  background: #e8e7e7;
+  height: 700px;
+  width: 45%;
+  position: absolute;
+  top: -18%;
+  left: 0;
+  z-index: -1;
+}
+
+.business-detail > h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.business-detail > h2::after {
+  content: "- Services -";
+  position: absolute;
+  width: 200px;
+  top: 35px;
+  left: calc(50% - 200px /2);
+}
+
+.content-wrapper .text h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.content-wrapper .text p {
+  height: 250px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-wrapper .text p::after {
+  content: "";
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.7) 60%, #fff 80%);
+}
+
+.content-wrapper .text .p-container {
+  position: relative;
+}
+
+.content-wrapper .text .p-container .more-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 100px / 2);
+  background: #2cb696;
+  font-size: .8rem;
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 5px 3px gray;
+}
+
+.content-wrapper .text .more-btn:hover{
+  transform: translateY(3px);
+  transition: .5s;
+  box-shadow: none;
+}
+
+.content-wrapper .text .more-btn a {
+  color: #eee;
+}
+
+.content-wrapper.business-box {
+  margin-bottom: 62px;
+}
+
+
+.content-wrapper {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.content-wrapper.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.content-wrapper .pic {
+  width: 50%;
+}
+
+.content-wrapper .pic figure {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.content-wrapper .text {
+  width: 48%;
+}
+
+.work {
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+}
+
+.work::before {
+  content: "";
+  background:  #e8e7e7;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+
+.work > h2 {
+  text-align: center;
+  margin-top: 62px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.work > h2::after {
+  content: "- Missions -";
+  position: absolute;
+  width: 140px;
+  left: calc(50% - 140px / 2);
+  top: 35px;
+}
+
+.work .content-wrapper {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.work .content-wrapper ul {
+  width: calc(100% / 3 - 24px);
+  overflow: hidden;
+}
+
+.work .content-wrapper img {
+  max-width: 90%;
+  max-height: 350px;
+}
+
+.work .content-wrapper figure {
+  margin: 0 auto;
+}
+
+.work .content-wrapper ul {
+  text-align: center;
+}
+
+.work .content-wrapper ul h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.news h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.news h2::after {
+  content: "- News -";
+  position: absolute;
+  width: 200px;
+  top: 35px;
+  left: calc(50% - 200px / 2);
+  }
+
+.news .content-wrapper{
+  margin-bottom: 180px;
+  width: 70%;
+}
+
+.news .content-wrapper li {
+  border-bottom: 1px dotted #dedede;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.news .content-wrapper li a {
+  color: #333333;
+}
+
+.news .content-wrapper li a:hover{
+  opacity: .6;
+}
+
+.news .content-wrapper li time {
+  font-size: .75em;
+  color: #949494;
+  padding-right: 0;
+  margin-right: 80px;
+}
+
+.recruit {
+ position: relative;
+}
+
+.recruit::after {
+  content: "";
+  background: #e8e7e7;
+  width: 45%;
+  height: 400px;
+  top: -20%;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.recruit-img img {
+  width: 80%;
+  max-height: 400px;
+  margin-right: 20%;
+  object-fit: cover;
+}
+
+.recruit-img::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.recruit h2 a {
+  position: absolute;
+  top: 45%;
+  right: 52%;
+  width: 250px;
+  height: 60px;
+  background: rgba(255,255,255,0.6);
+  line-height: 60px;
+  text-align: center;
+}
+
+/* =========== footer ===========*/
+
+footer {
+  background: #e8e7e7;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.addres p {
+  line-height: 1.8;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 30px;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: .85rem;
+  margin: 0;
+  line-height: 100px;
+  color: #333;
+}
+
+.copyright p::before {
+  content: "";
+  background: #888;
+  width: 95%;
+  height: .8px;
+  position: absolute;
+  left: 2.5%;
+}
+
+/* ===================
+   会社概要ページ
+=================== */
+
+/* バナー */
+
+section.company-banner  {
+  margin-bottom: 0;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 4.4%;
+  background-size: cover;
+  }
+
+.company-banner h1 {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  line-height: 200px;
+  color: #eee;
+  font-weight: normal;
+  background: rgba(51,51,51, .5);
+  }
+
+/* 社長挨拶 */
+
+.greet-by-ceo {
+  position: relative;
+}
+
+.greet-by-ceo .pic {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.greet-by-ceo .pic img {
+  width: 110%;
+  height: auto;
+}
+
+.greet-by-ceo .description {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 40%;
+  max-height: 100%;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.greet-by-ceo .description h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.greet-by-ceo .signature {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.greet-by-ceo p:nth-child(4) {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+
+/* 会社プロフィール */
+
+
+.table-container {
+  display: grid;
+  grid-template:
+  "table recruit-banner" 100%
+  / .8fr   200px;
+  grid-column-gap: 30px;
+  justify-content: center;
+}
+
+.table-container .table {
+  grid-area: table;
+  border: 1px solid #e8e7e7;
+  border-collapse: collapse;
+  }
+
+  .table-container .table th {
+    background: #e8e7e7;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 30%;
+    line-height: 1.5em;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+  }
+
+  .table-container .table td {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 1px solid #e8e7e7;
+    line-height: 1.5em;
+    height: 80px;
+  }
+
+.table-container .recruit-banner {
+  grid-area: recruit-banner;
+  position: relative;
+}
+
+.table-container .recruit-banner .pic {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.table-container .recruit-banner .pic img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.table-container .recruit-banner h1 {
+  color: #333;
+  background: rgba(238,238,238,0.5);
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+/* マップ */
+
+.company-map h1 {
+  text-align: center;
+  font-size: 1.3rem;
+  position: relative;
+  margin-bottom: 62px;
+}
+
+.company-map h1::after {
+  content: "- Access -";
+  position: absolute;
+  top: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.company-map .map {
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.company-map .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 570px) {
+  .table-container {
+    display: grid;
+    grid-template:
+    "table"          calc(100% - 120px + 20px)
+    "recruit-banner" 120px
+    / 80%;
+    grid-column-gap: 30px;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+  
+  .greet-by-ceo {
+    position: relative;
+  }
+  
+  .greet-by-ceo .description {
+    position: static;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .greet-by-ceo .description h1 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  .greet-by-ceo .signature {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .greet-by-ceo p:nth-child(4) {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.3em;
+  }
+}
+
+
+
+/* ===================
+   事業内容ページ
+=================== */
+
+.top-banner{
+  position: relative;
+}
+
+.top-banner .pic {
+  position: absolute;
+  height: 200px;
+  overflow: hidden;
+  top: 0;
+  z-index: -1;
+}
+
+.top-banner img {
+  position: relative;
+  top: -30%;
+  opacity: .5;
+}
+
+
+.top-banner h1 {
+  text-align: center;
+  margin: 0;
+  line-height: 200px;
+  color: #eee;
+  font-weight: normal;
+}
+
+.top-banner .pic::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  z-index: -1;
+}
+
+.service-container {
+  width: 80%;
+  position: relative;
+  margin: 0 auto 600px auto;
+}
+
+.service-container:last-child {
+  margin-bottom: 750px;
+}
+
+.service-container .pic {
+  width: 60%;
+  height: 400px;
+}
+
+.service-container .pic.pic-for-cruise-ship {
+  margin-left: 40%;
+}
+
+.service-container .pic img {
+  height: 100%;
+}
+
+.service-container .service-description {
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  top: 50%;
+  left: 40%;
+  background: #ffffff;
+  padding: 50px;
+}
+
+.service-container .service-description.description-for-cruise-ship{
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  top: 50%;
+  left: 0;
+  background: #ffffff;
+  padding: 50px;
+}
+
+/* ===================
+   採用情報ページ
+=================== */
+
+.recruit-outline h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.recruit-outline .recruit-table table {
+  border: 1px solid #e8e7e7;
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+}
+
+.recruit-outline .recruit-table table th {
+  border-bottom: 1px solid #fff;
+  background: #e8e7e7;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1.8em;
+}
+
+.recruit-outline .recruit-table table td {
+  border-bottom: 1px solid #e8e7e7;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1.8em;
+  width: 70%;
+  table-layout: 100%;
+}
+
+
+/* ===================
+   お問合わせページ
+=================== */
+
+.contact-form {
+  width: 60%;
+  margin: 62px auto 120px auto;
+}
+
+.contact-form h1 {
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  padding: 0 20px;
+  border: 1px dotted #676767;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+.contact-form label {
+  display: flex;
+  border-bottom: 1px solid #676767;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-form .label {
+  width: 30%;
+}
+
+.contact-form form input, textarea {
+  background: #fff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 30px;
+}
+
+.contact-form form select {
+  height: 30px;
+  background: #fff;
+}
+
+.contact-form form input[type="submit"] {
+  width: 300px;
+  height: 80px;
+  margin: 30px auto;
+  background: #2cb696;
+  color: #eee;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.contact-form form input[type="submit"]:hover{
+  opacity: 1.0;
+  transition: .5;
+}
+
+
